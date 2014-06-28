@@ -6,6 +6,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   installation
+   models
+
 
 
 Indices and tables
