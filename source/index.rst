@@ -8,13 +8,7 @@ Contents:
 
    installation
    models
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   helpers
+   configuration
+   option
 

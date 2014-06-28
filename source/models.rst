@@ -116,6 +116,50 @@ To set that the custom field may has more than one item you can set the **multip
 
 	}
 
+Setting up a route
+^^^^^^^^^^^^^^^^^^
+
+Route is the path that your posts of a model will be accessible to the public. In the example above, my posts of type **book** will be accessible in http://mysite.com/books:
+
+.. code-block:: php
+
+	<?php
+
+	class CarModel extends AppModel{
+
+		public $route = 'books';
+
+
+Labels and icon for the Wordpress Admin
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can setup the labels with two attributes of a model object: singular and plural. You can also specify a icon for the Post Type in the Wordpress Admin
+
+.. code-block:: php
+
+	<?php
+
+	class CarModel extends AppModel{
+
+		public $singular = "Car";
+  		public $plural = "Cars";
+    
+  		public $icon = "dashicons-admin-home";
+
+
+Linking a model to a taxonomy
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can easily link a model to one or more taxonomies, see:
+
+.. code-block:: php
+
+	<?php
+
+	class CarModel extends AppModel{
+
+		public $taxonomies = array('car_type', 'car_color'); 		
+	
 
 Retrieve items from Model	
 ^^^^^^^^^^^^^^^^^^^^^^^^^
