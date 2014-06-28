@@ -212,3 +212,5 @@ The PostObejct is an object that contains **all the properties** of an Wordpress
 	        public 'thumbnail' => string 'http://wp/wordpress/wp-content/uploads/2014/05/1399205647180-150x150.png' (length=72)
 	        public 'medium' => string 'http://wp/wordpress/wp-content/uploads/2014/05/1399205647180-300x225.png' (length=72)
 	        public 'large' => string 'http://wp/wordpress/wp-content/uploads/2014/05/1399205647180.png' (length=64)
+
+As you can see the custom fields `manufacturer` and `photo` can be accessed by simple doing `$post->manufacturer`.	        
