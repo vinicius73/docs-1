@@ -1,4 +1,4 @@
-Options Pages
+Options Page
 ============
 
 You can use options page to provide additional configuration and customization to your website, to create a options page is very similar to creating models.
