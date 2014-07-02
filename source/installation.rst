@@ -1,23 +1,29 @@
 Installation 
 ==============
 
-To install Alter you need to clone the repository and pull all the alter git submodules, enter in your theme folder and run:
+Create a `composer.json` for your theme:
 
 .. code-block:: shell
 
-	git clone git@github.com:alterfw/alter.git alter
+	composer init
 
-Then install Alter dependencies:	
+Then add to your `composer.json`:
 
-.. code-block:: shell
+.. code-block:: json
 	
-	cd alter; composer install	
+	"minimum-stability": "dev",
+	"require": {
+		"alterfw/alter": "dev-master"
+	}
 
+Run composer:
+
+.. code-block:: json
+
+	composer install
 
 After this, add this line to your **functions.php**:
 
 .. code-block:: php
-	
-	<?php
 
-	require_once "alter/core/main.php";
+	require_once "vendor/autoload.php";
