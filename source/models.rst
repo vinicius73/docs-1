@@ -194,7 +194,7 @@ And if you need to pass a Wordpress query ou can do also:
 
 
 Model find() automatic methods	
-^^^^^^^^^^^^^^^^^^^^^^^^^	
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^	
 
 If you want to find posts from a custom field, you can call `findBy<Attribute>()`, for example:
 
