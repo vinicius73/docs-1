@@ -193,6 +193,20 @@ And if you need to pass a Wordpress query ou can do also:
 	));
 
 
+Model find() automatic methods	
+^^^^^^^^^^^^^^^^^^^^^^^^^	
+
+If you want to find posts from a custom field, you can call `findBy<Attribute>()`, for example:
+
+.. code-block:: php
+
+	<?php	
+
+	$cars = $app->car->findByManufacturer("Wolks");
+
+You can use the find automagic method for all custom fields and also for ID, author, date, category and status.	
+
+
 Paginate	
 ^^^^^^^^
 
