@@ -85,6 +85,26 @@ Fields available.
   
 All **$section** arguments are optional, if it is not spent is automatically registered adiconado last section.
 
+Retrieving options.
+^^^^^^^^^^^^^^^^^^^
+Retrieve the saved options is also very easy.  
+You can use the global variable **$OPT** or using a function called **OPT()**.
+
+.. code-block:: php
+
+	global $OPT;
+	$OPT->get('option_id','default_value');
+	$OPT->_get('option_id'); // echo $OPT->get('option_id')
+	$OPT->_nl2br_get('option_id'); // echo nl2br($OPT->get('option_id'))
+	$OPT->option_id // $OPT->get('option_id')
+	$OPT->option_id('default_value'); // $OPT->get('option_id', 'default_value')
+
+	OPT('option_id','default_value'); // $OPT->get('option_id')
+	OPT()->get('option_id','default_value'); // $OPT->get('option_id', 'default_value')
+	OPT()->_get('option_id'); // echo $OPT->get('option_id')
+	OPT()->_nl2br_get('option_id'); // echo nl2br($OPT->get('option_id'))
+	OPT()->option_id; // $OPT->get('option_id')
+	OPT()->option_id('default_value'); // $OPT->get('option_id', 'default_value')
 
 
 .. _option-tree: https://github.com/valendesigns/option-tree
