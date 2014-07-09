@@ -45,7 +45,7 @@ Simply create a file in the root of your theme called **ThemeOptions.php ** and 
 				// Begins a section.
 				$this->addSection('opt_general', 'Geral')
 					// Section fields.
-					->addUpload('general_logo', 'Logo', 'Site's logo [280x85]');
+					->addUpload('general_logo', 'Logo', "Site's logo [280x85]");
 					->addText('general_logo_title', 'Title logo.', 'Enter the text that will be the description of the logo.');
 
 				// Begins a section.
