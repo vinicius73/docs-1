@@ -25,7 +25,7 @@ It is very simple to work with.
 	// $appTheme->addImageSize($name, $width, $height, $crop);
 	// $appTheme->addPostTypeSupport($post_type, $feature);
 	$appTheme->addMenu('main_menu', 'Main Menu');
-	$appTheme->addImageSize('page-thumbnail, 960, 400);
+	$appTheme->addImageSize('page-thumbnail', 960, 400);
 	$appTheme->addPostTypeSupport('page', 'excerpt');
 
 
