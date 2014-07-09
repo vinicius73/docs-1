@@ -79,6 +79,8 @@ The types available are:
 - boolean
 - image
 - file	
+  
+All fields and settings available in https://github.com/rilwis/meta-box#supported-fields
 
 
 Multiple custom fields
@@ -145,6 +147,47 @@ You can setup the labels with two attributes of a model object: singular and plu
   		public $plural = "Cars";
     
   		public $icon = "dashicons-admin-home";
+
+Overriding options.
+^^^^^^^^^^^^^^^^^^^
+
+You can manipulate any extra option register_post_type_ you want.
+
+.. code-block:: php
+
+	<?php
+
+	class CarModel extends AppModel{
+
+		public $args = array(
+			'public' => false
+		);
+
+		public $labels = array(
+			'not_found' => 'Nothing to show here.'
+		);
+
+There are more options available that you can override.
+
+.. code-block:: php
+
+	<?php
+
+	class CarModel extends AppModel{
+
+		public $fields = array();
+		public $taxonomies = array();
+		public $labels = array();
+		public $capabilities = array();
+		public $args = array();
+		public $supports = array();
+		public $icon = 'dashicons-admin-post';
+		public $capability_type = 'page';
+		public $text_domain = 'text_domain';
+		public $singular;
+		public $plural;
+		public $description;
+		public $route;
 
 
 Linking a model to a taxonomy
@@ -272,3 +315,5 @@ The PostObejct is an object that contains **all the properties** of an Wordpress
 	        public 'large' => string 'http://wp/wordpress/wp-content/uploads/2014/05/1399205647180.png' (length=64)
 
 As you can see the custom fields `manufacturer` and `photo` can be accessed by simple doing `$post->manufacturer`.	        
+
+.. _register_post_type: http://codex.wordpress.org/Function_Reference/register_post_type#Arguments

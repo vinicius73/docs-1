@@ -14,5 +14,6 @@ Contents:
    models
    helpers
    configuration
-   option
+   theme
+   theme_options
 
