@@ -60,28 +60,28 @@ The theme options are separated into sections, which facilitates the organizatio
 Fields available.
 ^^^^^^^^^^^^^^^^^
 
-- -> **addText** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *text*
-- -> **addTextarea** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *textarea*
-- -> **addSelect** ($id, $label, array $choices, $desc = null, $std = null, $section = null, array $extra = array()) // *field of type select.*
-- -> **addCheckbox** ($id, $label, array $choices, $desc = null, $std = null, $section = null, array $extra = array()) // *field of type checkbox.*
-- -> **addRadio** ($id, $label, array $choices, $desc = null, $std = null, $section = null, array $extra = array()) // *field of type radio.*
-- -> **addWYSIWYG** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *WYSIWYG*
-- -> **addUpload** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *upload (image)*
-- -> **addCustomPostTypeSelect** ($id, $label, $desc = null, $postType = 'post', $std = null, $section = null, array $extra = array()) // *select type field with custom post type*
-- -> **addCustomPostTypeCheckbox** ($id, $label, $desc = null, $postType = 'post', $std = null, $section = null, array $extra = array()) // *checkbox type field with custom post type*
-- -> **addPageSelect** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *select type field with post type page*
-- -> **addPageCheckbox** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *checkbox type field with post type page*
-- -> **addPostCheckbox** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *checkbox type field with post type post*
-- -> **addPostSelect** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *select type field with post type post*
-- -> **addTaxonomySelect** ($id, $label, $desc = null, $taxonomy = 'category', $std = null, $section = null, array $extra = array()) // *select type field with taxonomy*
-- -> **addTaxonomyCheckbox** ($id, $label, $desc = null, $taxonomy = 'category', $std = null, $section = null, array $extra = array()) // *checkbox type field with taxonomy*
-- -> **addCategorySelect** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *select type field with categories*
-- -> **addCategoryCheckbox** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *checkbox type field with categories*
-- -> **addTagSelect** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *select type field with tags*
-- -> **addTagCheckbox** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *checkbox type field with tags*
-- -> **addTypography** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array())
-- -> **addOnOff** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array())
-- -> **addOption** (array $args) // Raw data for option.
+- **addText** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *text*
+- **addTextarea** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *textarea*
+- **addSelect** ($id, $label, array $choices, $desc = null, $std = null, $section = null, array $extra = array()) // *field of type select.*
+- **addCheckbox** ($id, $label, array $choices, $desc = null, $std = null, $section = null, array $extra = array()) // *field of type checkbox.*
+- **addRadio** ($id, $label, array $choices, $desc = null, $std = null, $section = null, array $extra = array()) // *field of type radio.*
+- **addWYSIWYG** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *WYSIWYG*
+- **addUpload** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *upload (image)*
+- **addCustomPostTypeSelect** ($id, $label, $desc = null, $postType = 'post', $std = null, $section = null, array $extra = array()) // *select type field with custom post type*
+- **addCustomPostTypeCheckbox** ($id, $label, $desc = null, $postType = 'post', $std = null, $section = null, array $extra = array()) // *checkbox type field with custom post type*
+- **addPageSelect** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *select type field with post type page*
+- **addPageCheckbox** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *checkbox type field with post type page*
+- **addPostCheckbox** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *checkbox type field with post type post*
+- **addPostSelect** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *select type field with post type post*
+- **addTaxonomySelect** ($id, $label, $desc = null, $taxonomy = 'category', $std = null, $section = null, array $extra = array()) // *select type field with taxonomy*
+- **addTaxonomyCheckbox** ($id, $label, $desc = null, $taxonomy = 'category', $std = null, $section = null, array $extra = array()) // *checkbox type field with taxonomy*
+- **addCategorySelect** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *select type field with categories*
+- **addCategoryCheckbox** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *checkbox type field with categories*
+- **addTagSelect** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *select type field with tags*
+- **addTagCheckbox** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array()) // *checkbox type field with tags*
+- **addTypography** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array())
+- **addOnOff** ($id, $label, $desc = null, $std = null, $section = null, array $extra = array())
+- **addOption** (array $args) // Raw data for option.
   
 All **$section** arguments are optional, if it is not spent is automatically registered adiconado last section.
 
